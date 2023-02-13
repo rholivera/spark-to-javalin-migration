@@ -1,26 +1,26 @@
 package com.example;
 
-import com.example.router.Router;
+import com.example.config.SwaggerConfig;
+import com.google.common.net.MediaType;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
-import spark.Spark;
 
 @Slf4j
 public class Main {
+    private static final int DEFAULT_PORT = 8080;
+    private static final String JAVALIN_PORT = "javalin.port";
 
     public static void main(final String[] args) {
-        try {
-            log.info("Application Started!");
-            final String prop = System.getProperty("spark.port");
-            final int port = StringUtils.isNotBlank(prop) ? Integer.parseInt(prop) : 8080;
-            Spark.port(port);
-            final Router router = new Router();
-            router.init();
-            log.info("Listening on port: {} ", port);
-        } catch (Throwable t) {
-            t.printStackTrace();
-            log.error("An exception occurred while starting up the application",t);
-        }
+        String prop = System.getProperty(JAVALIN_PORT);
+        int port = StringUtils.isNotBlank(prop) ? Integer.parseInt(prop) : DEFAULT_PORT;
+
+        WebServer app = new WebServer(config -> {
+            config.defaultContentType = MediaType.JSON_UTF_8.toString();
+            config.registerPlugin(SwaggerConfig.getOpenApiOptions());
+        });
+        app.start(port);
+
+        log.info("Listening on http://localhost:{}/", port);
     }
 
 }
