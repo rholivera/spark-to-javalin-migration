@@ -1,9 +1,9 @@
 package com.example;
 
 import extensions.ApiTestExtension;
-import io.restassured.RestAssured;
-import io.restassured.response.Response;
+import io.javalin.testtools.JavalinTest;
 import lombok.extern.slf4j.Slf4j;
+import okhttp3.Response;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
@@ -16,8 +16,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class PingTest {
     @Test
     void ping() {
-        final Response response = RestAssured.get("http://localhost:8080/ping");
-        assertEquals(HttpServletResponse.SC_OK, response.getStatusCode());
-        assertEquals("pong", response.getBody().asString());
+        WebServer app = new WebServer();
+        JavalinTest.test(app.getServer(), (javalin, client) -> {
+            Response response = client.get("/ping");
+            assertEquals(HttpServletResponse.SC_OK, response.code());
+            assertEquals("pong", response.body().string());
+        });
     }
 }
