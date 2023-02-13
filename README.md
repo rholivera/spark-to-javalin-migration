@@ -1,6 +1,6 @@
 # javaspark example
 
-Java 8 [sparkjava](https://sparkjava.com/) example
+Java 11 [sparkjava](https://sparkjava.com/) example
 
 ## Install
 
