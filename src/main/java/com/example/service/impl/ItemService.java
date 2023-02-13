@@ -10,8 +10,12 @@ import com.google.gson.Gson;
 import java.io.IOException;
 
 public class ItemService implements IItemService {
-    private final OkHttpClient httpClient = new OkHttpClient();
+    private OkHttpClient httpClient;
     private final String ITEMS_API_URL = "https://api.mercadolibre.com/items/";
+
+    public ItemService(){
+        this.httpClient = new OkHttpClient();
+    }
 
     public ItemResponseDto getItemById(String itemId) {
         Request request = new Request.Builder()
