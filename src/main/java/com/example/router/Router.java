@@ -1,45 +1,30 @@
 package com.example.router;
 
 import com.example.DependencyInjectionModule;
-import com.google.common.net.MediaType;
+import com.example.controller.ItemController;
+import com.google.common.base.Stopwatch;
 import com.google.inject.Injector;
+import io.javalin.apibuilder.EndpointGroup;
 import lombok.extern.slf4j.Slf4j;
-import spark.*;
-import spark.servlet.SparkApplication;
 
-import javax.servlet.http.HttpServletResponse;
+import java.util.concurrent.TimeUnit;
+
+import static io.javalin.apibuilder.ApiBuilder.get;
 
 @Slf4j
-public class Router implements SparkApplication {
+public class Router implements EndpointGroup {
+
+    private ItemController itemController;
     @Override
-    public void init() {
+    public void addEndpoints() {
+        Injector injector = DependencyInjectionModule.getInstance();
+        Stopwatch stopwatch = Stopwatch.createStarted();
+        itemController = injector.getInstance(ItemController.class);
 
-        final Injector injector = DependencyInjectionModule.getInstance();
+        long timeTakenToExecuteRouterInit = stopwatch.elapsed(TimeUnit.SECONDS);
+        log.info("[init] Time taken to execute Router.init method: {}s", timeTakenToExecuteRouterInit);
 
-        Spark.before((request, response) -> request.body());
+        get("/items/{itemId}", itemController::handleGetItemById);
 
-        Spark.after((request, response) -> setHeaders(response));
-
-        Spark.get("/ping", (request, response) -> {
-
-            response.status(HttpServletResponse.SC_OK);
-            response.header("Content-Type", MediaType.PLAIN_TEXT_UTF_8.toString());
-
-            return "pong";
-        });
-
-        configureEndpoints();
-    }
-
-    private void configureEndpoints() {
-    }
-
-    private void setHeaders(final Response response) {
-        if (!response.raw().containsHeader("Content-Type")) {
-            response.header("Content-Type", MediaType.JSON_UTF_8.toString());
-        }
-
-        response.header("Vary", "Accept,Accept-Encoding");
-        response.header("Cache-Control", "max-age=0");
     }
 }
