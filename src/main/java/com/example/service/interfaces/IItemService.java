@@ -1,8 +1,9 @@
 package com.example.service.interfaces;
 
-import com.example.dto.item.ItemResponseDto;
+
+import com.example.exception.ApiException;
 
 public interface IItemService {
 
-    ItemResponseDto getItemById(String itemId);
+    String getItemById(String itemId) throws ApiException;
 }

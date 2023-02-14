@@ -1,0 +1,357 @@
+{
+  "id": "MLA912141455",
+  "site_id": "MLA",
+  "title": "Calcomanía Estrella Militar Calavera Jeep Auto Camioneta",
+  "subtitle": null,
+  "seller_id": 187192320,
+  "category_id": "MLA412007",
+  "official_store_id": null,
+  "price": 1328,
+  "base_price": 1328,
+  "original_price": null,
+  "currency_id": "ARS",
+  "initial_quantity": 500,
+  "available_quantity": 250,
+  "sold_quantity": 1,
+  "sale_terms": [
+    {
+      "id": "WARRANTY_TYPE",
+      "name": "Tipo de garantía",
+      "value_id": "6150835",
+      "value_name": "Sin garantía",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "6150835",
+          "name": "Sin garantía",
+          "struct": null
+        }
+      ],
+      "value_type": "list"
+    }
+  ],
+  "buying_mode": "buy_it_now",
+  "listing_type_id": "gold_special",
+  "start_time": "2021-03-16T20:19:30.000Z",
+  "stop_time": "2041-03-11T04:00:00.000Z",
+  "condition": "new",
+  "permalink": "https://articulo.mercadolibre.com.ar/MLA-912141455-calcomania-estrella-militar-calavera-jeep-auto-camioneta-_JM",
+  "thumbnail_id": "858817-MLA45230257631_032021",
+  "thumbnail": "http://http2.mlstatic.com/D_858817-MLA45230257631_032021-I.jpg",
+  "secure_thumbnail": "https://http2.mlstatic.com/D_858817-MLA45230257631_032021-I.jpg",
+  "pictures": [
+    {
+      "id": "858817-MLA45230257631_032021",
+      "url": "http://http2.mlstatic.com/D_858817-MLA45230257631_032021-O.jpg",
+      "secure_url": "https://http2.mlstatic.com/D_858817-MLA45230257631_032021-O.jpg",
+      "size": "500x331",
+      "max_size": "1200x796",
+      "quality": ""
+    }
+  ],
+  "video_id": null,
+  "descriptions": [],
+  "accepts_mercadopago": true,
+  "non_mercado_pago_payment_methods": [],
+  "shipping": {
+    "mode": "me2",
+    "methods": [],
+    "tags": [
+      "self_service_in"
+    ],
+    "dimensions": null,
+    "local_pick_up": false,
+    "free_shipping": false,
+    "logistic_type": "xd_drop_off",
+    "store_pick_up": false
+  },
+  "international_delivery_mode": "none",
+  "seller_address": {
+    "city": {
+      "name": "Carapachay"
+    },
+    "state": {
+      "id": "AR-B",
+      "name": "Buenos Aires"
+    },
+    "country": {
+      "id": "AR",
+      "name": "Argentina"
+    },
+    "search_location": {
+      "neighborhood": {
+        "id": "TUxBQkNBUjY0OTFa",
+        "name": "Carapachay"
+      },
+      "city": {
+        "id": "TUxBQ1ZJQ2E3MTQz",
+        "name": "Vicente López"
+      },
+      "state": {
+        "id": "TUxBUEdSQWU4ZDkz",
+        "name": "Bs.As. G.B.A. Norte"
+      }
+    },
+    "id": 1028496632
+  },
+  "seller_contact": null,
+  "location": {},
+  "coverage_areas": [],
+  "attributes": [
+    {
+      "id": "BRAND",
+      "name": "Marca",
+      "value_id": null,
+      "value_name": "Oracal 651 - Mc Cal - Arlon",
+      "value_struct": null,
+      "values": [
+        {
+          "id": null,
+          "name": "Oracal 651 - Mc Cal - Arlon",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "string"
+    },
+    {
+      "id": "IS_CUSTOMIZED",
+      "name": "Es personalizado",
+      "value_id": "242085",
+      "value_name": "Sí",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "242085",
+          "name": "Sí",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "boolean"
+    },
+    {
+      "id": "IS_SHEET",
+      "name": "Es plancha ",
+      "value_id": "242084",
+      "value_name": "No",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "242084",
+          "name": "No",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "boolean"
+    },
+    {
+      "id": "ITEM_CONDITION",
+      "name": "Condición del ítem",
+      "value_id": "2230284",
+      "value_name": "Nuevo",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "2230284",
+          "name": "Nuevo",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "list"
+    },
+    {
+      "id": "LENGTH",
+      "name": "Largo",
+      "value_id": null,
+      "value_name": "30 cm",
+      "value_struct": {
+        "number": 30,
+        "unit": "cm"
+      },
+      "values": [
+        {
+          "id": null,
+          "name": "30 cm",
+          "struct": {
+            "number": 30,
+            "unit": "cm"
+          }
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "number_unit"
+    },
+    {
+      "id": "MATERIAL",
+      "name": "Material",
+      "value_id": null,
+      "value_name": "oracal",
+      "value_struct": null,
+      "values": [
+        {
+          "id": null,
+          "name": "oracal",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "string"
+    },
+    {
+      "id": "MODEL",
+      "name": "Modelo",
+      "value_id": null,
+      "value_name": "Estrella Jeep",
+      "value_struct": null,
+      "values": [
+        {
+          "id": null,
+          "name": "Estrella Jeep",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "string"
+    },
+    {
+      "id": "PATTERN_NAME",
+      "name": "Nombre del diseño",
+      "value_id": null,
+      "value_name": "Estrella Jeep Calavera",
+      "value_struct": null,
+      "values": [
+        {
+          "id": null,
+          "name": "Estrella Jeep Calavera",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "string"
+    },
+    {
+      "id": "STICKERS_NUMBER",
+      "name": "Cantidad de calcomanías",
+      "value_id": null,
+      "value_name": "1",
+      "value_struct": null,
+      "values": [
+        {
+          "id": null,
+          "name": "1",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "number"
+    },
+    {
+      "id": "STICKER_SHAPE",
+      "name": "Forma de la calcomanía",
+      "value_id": "4735600",
+      "value_name": "Circular",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "4735600",
+          "name": "Circular",
+          "struct": null
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "string"
+    },
+    {
+      "id": "WIDTH",
+      "name": "Ancho",
+      "value_id": null,
+      "value_name": "30 cm",
+      "value_struct": {
+        "number": 30,
+        "unit": "cm"
+      },
+      "values": [
+        {
+          "id": null,
+          "name": "30 cm",
+          "struct": {
+            "number": 30,
+            "unit": "cm"
+          }
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Otros",
+      "value_type": "number_unit"
+    }
+  ],
+  "warnings": [],
+  "listing_source": "",
+  "variations": [
+    {
+      "id": 173606846390,
+      "price": 1328,
+      "attribute_combinations": [
+        {
+          "id": "COLOR",
+          "name": "Color",
+          "value_id": "52049",
+          "value_name": "Negro",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "52049",
+              "name": "Negro",
+              "struct": null
+            }
+          ],
+          "value_type": "string"
+        }
+      ],
+      "available_quantity": 250,
+      "sold_quantity": 1,
+      "sale_terms": [],
+      "picture_ids": [
+        "858817-MLA45230257631_032021"
+      ],
+      "catalog_product_id": null
+    }
+  ],
+  "status": "active",
+  "sub_status": [],
+  "tags": [
+    "loyalty_discount_eligible",
+    "good_quality_picture",
+    "good_quality_thumbnail",
+    "immediate_payment",
+    "cart_eligible"
+  ],
+  "warranty": "Sin garantía",
+  "catalog_product_id": null,
+  "domain_id": "MLA-STICKERS",
+  "parent_item_id": null,
+  "differential_pricing": null,
+  "deal_ids": [],
+  "automatic_relist": false,
+  "date_created": "2021-03-16T20:19:30.000Z",
+  "last_updated": "2023-02-14T15:41:16.912Z",
+  "health": 0.88,
+  "catalog_listing": false,
+  "channels": [
+    "marketplace",
+    "mshops"
+  ]
+}

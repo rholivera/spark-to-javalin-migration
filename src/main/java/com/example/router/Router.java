@@ -13,18 +13,16 @@ import static io.javalin.apibuilder.ApiBuilder.get;
 
 @Slf4j
 public class Router implements EndpointGroup {
-
-    private ItemController itemController;
     @Override
     public void addEndpoints() {
         Injector injector = DependencyInjectionModule.getInstance();
         Stopwatch stopwatch = Stopwatch.createStarted();
-        itemController = injector.getInstance(ItemController.class);
+        ItemController itemController = injector.getInstance(ItemController.class);
 
         long timeTakenToExecuteRouterInit = stopwatch.elapsed(TimeUnit.SECONDS);
         log.info("[init] Time taken to execute Router.init method: {}s", timeTakenToExecuteRouterInit);
 
-        get("/items/{itemId}", itemController::handleGetItemById);
+        get("/items/{itemId}", itemController::getItemById);
 
     }
 }
